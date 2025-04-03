@@ -422,6 +422,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: kitchenObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c5ece9177621d4125ad963f895af43e9, type: 2}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: c5ece9177621d4125ad963f895af43e9, type: 2}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 917501177}
     - target: {fileID: 8781846907692631630, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12152493
@@ -528,6 +540,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: testing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: tomatoPrefab
+      value: 
+      objectReference: {fileID: 7974090203933813738, guid: 580388119d36749f9ba2abef9d0c3bf3, type: 3}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: kitchenObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f2616f16f1614e758bf74d44528f2c6, type: 2}
+    - target: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f2616f16f1614e758bf74d44528f2c6, type: 2}
     - target: {fileID: 8781846907692631630, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6
@@ -617,6 +645,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917501177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7213062438299167819, guid: 9cb7dfa66ba4947ac8b16a330b03029f, type: 3}
+  m_PrefabInstance: {fileID: 866507356}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03648596f113b4fd7bb57595c429b699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1310916239
 GameObject:
   m_ObjectHideFlags: 0
