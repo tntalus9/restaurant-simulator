@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8781846907692631630}
   - component: {fileID: 2911469571637576102}
   - component: {fileID: 7213062438299167819}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ClearCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   kitchenObjectSO: {fileID: 0}
   counterTopPoint: {fileID: 3640166062428222334}
   secondClearCounter: {fileID: 0}
+  testing: 1
 --- !u!1001 &7101077794581894885
 PrefabInstance:
   m_ObjectHideFlags: 0
