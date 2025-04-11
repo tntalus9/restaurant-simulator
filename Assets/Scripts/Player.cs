@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IKitchenObjectParent
 {
-    public static Player Instance{get; private set;}
+    public static Player Instance{ get; private set; }
     
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
     public class OnSelectedCounterChangedEventArgs : EventArgs
@@ -34,6 +34,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     private void Start()
     {
         gameInput.OnInteractAction += GameInputOnInteractAction;
+        gameInput.OnAlternateInteractAction+= GameInputOnAlternateInteractAction;
     }
 
     private void Update()
@@ -49,6 +50,15 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             selectedCounter.Interact(this);
         }
     }
+    
+    private void GameInputOnAlternateInteractAction(object sender, EventArgs e)
+    {
+        if (selectedCounter != null)
+        {
+            selectedCounter.AlternateInteract(this);
+        }
+    }
+    
     
     private void HandleInteractions()
     {
