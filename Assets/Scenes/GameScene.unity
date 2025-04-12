@@ -188,6 +188,22 @@ PrefabInstance:
       propertyPath: cutKitchenObjectSO
       value: 
       objectReference: {fileID: 11400000, guid: b56cd0cdb719e45c6bc019b1e4f9b18f, type: 2}
+    - target: {fileID: -7892297697833221585, guid: b9b54e14cc8cf4d468f51d2614e13e34, type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -7892297697833221585, guid: b9b54e14cc8cf4d468f51d2614e13e34, type: 3}
+      propertyPath: 'cuttingRecipeSOArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7134cf5e63d204559b50b22b641af1bc, type: 2}
+    - target: {fileID: -7892297697833221585, guid: b9b54e14cc8cf4d468f51d2614e13e34, type: 3}
+      propertyPath: 'cuttingRecipeSOArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8010faf2ef6d445eba1204fb33d13727, type: 2}
+    - target: {fileID: -7892297697833221585, guid: b9b54e14cc8cf4d468f51d2614e13e34, type: 3}
+      propertyPath: 'cuttingRecipeSOArray.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c83799e6c2b664ef1a2a97123cf2f857, type: 2}
     - target: {fileID: 1535017114369291025, guid: b9b54e14cc8cf4d468f51d2614e13e34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
