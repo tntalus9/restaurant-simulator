@@ -104,8 +104,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         float moveDistance = moveSpeed * Time.deltaTime;
         float playerHeight = 2f;
         float playerRadius = 0.7f;
-        bool canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirection, moveDistance);
-        
+        bool canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, 
+            playerRadius, moveDirection, moveDistance);
         // implement and visualize raycast
         // bool canMove = !Physics.Raycast(transform.position, movementDirection, playerSize);
         // Debug.DrawRay(transform.position, movementDirection * playerSize, Color.red);
@@ -120,8 +120,9 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             // Can't move to given position. Try to move horizontally
             //Vector3 moveDirectionX = new Vector3(moveDirection.x, 0f, 0f);
             
-            Vector3 moveDirectionX = Vector3.right * moveDirection.x;
-            canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirectionX, moveDistance);
+            Vector3 moveDirectionX = (Vector3.right * moveDirection.x).normalized;
+            canMove = moveDirection.x != 0 && !Physics.CapsuleCast(transform.position, 
+                transform.position + Vector3.up * playerHeight, playerRadius, moveDirectionX, moveDistance);
 
             if (canMove)
             {
@@ -131,8 +132,9 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             {
                 // Can't move horizontally. Try to move vertically
                 //Vector3 moveDirectionZ = new Vector3(0f, 0f, moveDirection.z);
-                Vector3 moveDirectionZ = Vector3.forward * moveDirection.z;
-                canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirectionZ, moveDistance);
+                Vector3 moveDirectionZ = (Vector3.forward * moveDirection.z).normalized;
+                canMove = moveDirection.z != 0 && !Physics.CapsuleCast(transform.position, 
+                    transform.position + Vector3.up * playerHeight, playerRadius, moveDirectionZ, moveDistance);
 
                 if (canMove)
                 {
