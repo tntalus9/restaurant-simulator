@@ -47,4 +47,6 @@ public class PlatesCounter : BaseCounter
             }
         }
     }
+    
+    
 }

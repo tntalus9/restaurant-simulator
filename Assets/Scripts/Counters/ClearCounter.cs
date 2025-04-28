@@ -38,7 +38,7 @@ public class ClearCounter : BaseCounter
                         // counter has a plate kitchen object
                         if (plateKitchenObject.TryAddIngredient(player.GetKitchenObject().GetKitchenObjectSO()))
                         {
-                            GetKitchenObject().DestroyKitchenObject();
+                            player.GetKitchenObject().DestroyKitchenObject();
                         }
                     }
                 }

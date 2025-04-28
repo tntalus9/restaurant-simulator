@@ -30,8 +30,10 @@ public class PlateCompleteVisual : MonoBehaviour
         {
             if (kitchenObjectSO_GameObject.kitchenObjectSO == e.kitchenObjectSO)
             {
+                Debug.Log(e.kitchenObjectSO);
                 kitchenObjectSO_GameObject.gameObject.SetActive(true);
             }
         }
     }
+    
 }
